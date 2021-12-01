@@ -1,0 +1,10 @@
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\obj\Debug\MCISample.csprojAssemblyReference.cache
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\obj\Debug\MCISample.csproj.CoreCompileInputs.cache
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\bin\Debug\MCISample.exe.config
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\bin\Debug\MCISample.exe
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\bin\Debug\MCISample.pdb
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\bin\Debug\RestSharp.dll
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\obj\Debug\MCISample.csproj.CopyComplete
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\obj\Debug\MCISample.exe
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\obj\Debug\MCISample.pdb
+H:\Documents\GitHub\IPEC.MCISample\MCISample\MCISample\bin\Debug\RestSharp.xml

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D400463D-123B-4183-9BE2-33D83A113CC1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MCISample</RootNamespace>
+    <AssemblyName>MCISample</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp, Version=106.13.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.13.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MFWS\ExtensionMethods\DictionaryExtensionMethods.cs" />
+    <Compile Include="MFWS\ExtensionMethods\FolderContentItemExtensionMethods.cs" />
+    <Compile Include="MFWS\ExtensionMethods\IEnumerableExtensionMethods.cs" />
+    <Compile Include="MFWS\ExtensionMethods\IEnumerablePluginInfoConfigurationExtensionMethods.cs" />
+    <Compile Include="MFWS\ExtensionMethods\RestRequestExtensionMethods.cs" />
+    <Compile Include="MFWS\ExtensionMethods\UriBuilderExtensionMethods.cs" />
+    <Compile Include="MFWS\MFWSClient.Authentication.cs" />
+    <Compile Include="MFWS\MFWSClient.Authentication.OAuth.cs" />
+    <Compile Include="MFWS\MFWSClient.cs" />
+    <Compile Include="MFWS\MFWSClient.Session.cs" />
+    <Compile Include="MFWS\MFWSClientBase.cs" />
+    <Compile Include="MFWS\MFWSClientBase.HttpRequests.cs" />
+    <Compile Include="MFWS\MFWSExtensions.cs" />
+    <Compile Include="MFWS\MFWSStructs.cs" />
+    <Compile Include="MFWS\MFWSVaultAutomaticMetadataOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultClassOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultExtensionAuthenticationOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultExtensionMethodOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultExternalObjectOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultObjectFileOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultObjectOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultObjectPropertyOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultObjectSearchOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultObjectTypeOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultOperationsBase.cs" />
+    <Compile Include="MFWS\MFWSVaultPropertyDefOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultValueListItemOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultValueListOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultViewOperations.cs" />
+    <Compile Include="MFWS\MFWSVaultWorkflowOperations.cs" />
+    <Compile Include="MFWS\OAuth2\OAuth2Configuration.cs" />
+    <Compile Include="MFWS\OAuth2\OAuth2TokenResponse.cs" />
+    <Compile Include="MFWS\RestRequestEventArgs.cs" />
+    <Compile Include="MFWS\RestResponseEventArgs.cs" />
+    <Compile Include="MFWS\Searching\IncludeDeletedObjectsSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\ISearchCondition.cs" />
+    <Compile Include="MFWS\Searching\ObjectTypeSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\BooleanPropertyValueSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\DatePropertyValueSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\LookupPropertyValueSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\MultiSelectLookupPropertyValueSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\NumericPropertyValueSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\PropertyValueSearchConditionBase.cs" />
+    <Compile Include="MFWS\Searching\PropertyValues\TextPropertyValueSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\QuickSearchCondition.cs" />
+    <Compile Include="MFWS\Searching\SearchConditionBase.cs" />
+    <Compile Include="MFWS\Searching\SearchConditionOperators.cs" />
+    <Compile Include="MFWS\Searching\ValueListSearchCondition.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
