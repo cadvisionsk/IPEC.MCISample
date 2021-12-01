@@ -112,6 +112,7 @@ namespace MFilesRestAPI {
                     i++;
                 }
 
+                Debug.Log($"Write vault index (1-{onlineVaults.Count}) and press ENTER to connect to the vault ..");
                 i = int.Parse(Console.ReadLine());
 
                 // Connecting to a vault is done by using the vault's GUID in the AuthenticateUsingCredentials call
